@@ -4,7 +4,9 @@ html {
     margin: 0;
 }
 
-*,*::after,*::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -74,7 +76,7 @@ body {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
-    margin:0 10px 0 16px;
+    margin: 0 10px 0 16px;
 }
 
 .button {
@@ -123,7 +125,7 @@ body {
     background-position: center center;
 }
 
- .main {
+.main {
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
@@ -163,7 +165,7 @@ body {
     line-height: 24px;
     font-size: 16px;
     letter-spacing: -0.2px;
-    color:#1B1C21;
+    color: #1B1C21;
 }
 
 .main__title::before {
@@ -181,14 +183,21 @@ body {
 .navigation__list {
     list-style: none;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding-left: 1rem;
     margin: 0;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
 }
+
+.navigation__list::-webkit-scrollbar {
+    width: 0;
+}
+
 
 .navigation__button {
     font-family: "TTLakes medium";
-    color:#7E7E82;
+    color: #7E7E82;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -219,7 +228,7 @@ body {
 }
 
 
-.main__info-text { 
+.main__info-text {
     height: 90px;
     overflow-y: hidden;
     letter-spacing: 0.2px;
@@ -298,6 +307,7 @@ body {
     .main__image {
         display: none;
     }
+
     .main__image_medium[hidden] {
         display: block;
     }
@@ -354,5 +364,3 @@ body {
         display: block;
     }
 }
-
-
