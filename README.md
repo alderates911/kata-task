@@ -1,1 +1,1 @@
-https://kata-academy-task.netlify.app/
+alderates911.github.io/kata-task/menu
