@@ -1,1 +1,1 @@
-alderates911.github.io/kata-task/menu
+alderates911.github.io/kata-task/menu.html
