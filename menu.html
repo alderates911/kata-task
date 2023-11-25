@@ -10,7 +10,6 @@
 <body>
     <div class="menu menu_active">
         <header class="menu__header"> 
-            <div class="menu__header-container">
             <button class="menu__close-btn button">
                 <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79348 1.25712C2.40295 0.866593 1.76979 0.866592 1.37927 1.25712L1.25712 1.37927C0.866592 1.76979 0.866593 2.40296 1.25712 2.79348L7.46364 9L1.25712 15.2065C0.866593 15.597 0.866592 16.2302 1.25712 16.6207L1.37927 16.7429C1.76979 17.1334 2.40295 17.1334 2.79348 16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334 16.2302 17.1334 16.6207 16.7429L16.7429 16.6207C17.1334 16.2302 17.1334 15.597 16.7429 15.2065L10.5364 9L16.7429 2.79348C17.1334 2.40296 17.1334 1.76979 16.7429 1.37927L16.6207 1.25712C16.2302 0.866592 15.597 0.866593 15.2065 1.25712L9 7.46364L2.79348 1.25712Z" fill="white"/>
@@ -33,33 +32,32 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5006 11.0006H11.7106L11.4306 10.7306C12.6306 9.33063 13.2506 7.42063 12.9106 5.39063C12.4406 2.61063 10.1206 0.390626 7.32063 0.0506256C3.09063 -0.469374 -0.469374 3.09063 0.0506256 7.32063C0.390626 10.1206 2.61063 12.4406 5.39063 12.9106C7.42063 13.2506 9.33063 12.6306 10.7306 11.4306L11.0006 11.7106V12.5006L15.2606 16.7506C15.6706 17.1606 16.3306 17.1606 16.7406 16.7506L16.7506 16.7406C17.1606 16.3306 17.1606 15.6706 16.7506 15.2606L12.5006 11.0006ZM6.50063 11.0006C4.01063 11.0006 2.00063 8.99063 2.00063 6.50063C2.00063 4.01063 4.01063 2.00063 6.50063 2.00063C8.99063 2.00063 11.0006 4.01063 11.0006 6.50063C11.0006 8.99063 8.99063 11.0006 6.50063 11.0006Z" fill="white"/>
                 </svg>
             </button>
-            </div>
         </header>
         <nav class="menu_navigation">
             <ul class="menu__list">
-                <li class="menu__list-item ">
-                    <a href="#" class="menu__list-link link menu__list-item_active">Ремонт техники</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link menu__link_active">Ремонт техники</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Услуги и сервисы</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Услуги и сервисы</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Корпоративным клиентам</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Корпоративным клиентам</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Продавцам техники</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Продавцам техники</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Партнерам</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Партнерам</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Производителям</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Производителям</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Наши сервисные центры</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Наши сервисные центры</a>
                 </li>
-                <li class="menu__list-item">
-                    <a href="#" class="menu__list-link link">Контакты</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -81,15 +79,17 @@
                         <path d="M0.0165859 16.6118C-0.113065 17.3412 0.535191 18 1.33903 18H18.6604C19.4902 18 20.1125 17.3412 19.9829 16.6118C19.2309 12.4 15.0561 10 9.99973 10C4.94333 10 0.768563 12.4 0.0165859 16.6118Z" fill="white"/>
                     </svg>
                 </a>
-                <a href="#" class="contacts__mail link">mail@cps.com</a>
-                <p class="contact__phone">
-                    <a href="tel:+88008908900" class="contacts__phone-link link">8 800 890 8900</a>
-                </p>
+                <address class="contacts__address">
+                    <a href="mailto:mail@cps.com" class="contacts__mail link">mail@cps.com</a>
+                    <p class="contacts__phone">
+                        <a href="tel:+88008908900" class="contacts__phone-link link">8 800 890 8900</a>
+                    </p>
+                </address>
             </section>
             <div class="lang-selector">
-                <button class="lang-selector__ru-btn lang_btn lang-selector__ru-btn_current">RU</button>
-                <button class="lang-selector__en-btn lang_btn">EN</button>
-                <button class="lang-selector__ch-btn lang_btn">CH</button>
+                <button class="lang-selector-btn lang-selector-btn_current">RU</button>
+                <button class="lang-selector-btn">EN</button>
+                <button class="lang-selector-btn">CH</button>
             </div>
         </footer>
     </div>
