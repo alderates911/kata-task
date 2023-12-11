@@ -557,6 +557,7 @@ body {
 .slider-container {
     position: relative;
     width: 100%;
+    transition: height 0.5s ease-in-out;
 }
 
 .swiper {
@@ -570,7 +571,7 @@ body {
 .swiper-wrapper {
     height: 72px;
     box-sizing: border-box;
-    
+    transition: height 0.4s ease-in-out;
 }
 
 .swiper__brand {
@@ -646,14 +647,20 @@ body {
     content: "";
  }
 
-.repair__read-more {
-    display: none;
-    margin: 20px 0 0 10px;
-}
 
 .repair__read-more {
     width: auto;
     padding-left: 24px;
+    display: none;
+    margin: 20px 0 0 10px;
+}
+
+.repair__read-more::before {
+    transition: transform 0.5s ease-in-out;
+}
+.repair__read-more:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .repair__read-more-modified::before {
